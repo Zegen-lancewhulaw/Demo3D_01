@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Lib\TPSCameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Lib\WholeGameSettings.cs" />
     <Compile Include="Assets\Scripts\Lib\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Lib\ShellMove.cs" />
     <Compile Include="Assets\Scripts\Lib\TransformExtensions.cs" />
