@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 100
+  controlID: 98
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -168,8 +168,8 @@ MonoBehaviour:
     y: 0
     width: 1028.8
     height: 523.2
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -194,8 +194,8 @@ MonoBehaviour:
     y: 523.2
     width: 1028.8
     height: 487.60004
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -469,7 +469,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 26.399998}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -748,13 +748,13 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.2473507, y: 3.3654158, z: -3.5238454}
+    m_Target: {x: 0, y: 1.0699999, z: -1.5999997}
     speed: 2
-    m_Value: {x: 5.2473507, y: 3.3654158, z: -3.5238454}
+    m_Value: {x: 0, y: 1.0699999, z: -1.5999997}
   m_RenderMode: 0
   m_CameraMode:
-    drawMode: 0
-    name: Shaded
+    drawMode: 2
+    name: Shaded Wireframe
     section: Shading Mode
   m_ValidateTrueMetals: 0
   m_DoValidateTrueMetals: 0
@@ -796,13 +796,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.509
   m_Rotation:
-    m_Target: {x: 0.08033889, y: 0.75536674, z: -0.09429836, w: 0.64351803}
+    m_Target: {x: 0.19670898, y: -0.0017629627, z: 0.00035381928, w: 0.9804626}
     speed: 2
-    m_Value: {x: 0.08110935, y: 0.75523764, z: -0.09520281, w: 0.64340806}
+    m_Value: {x: 0.19670853, y: -0.0017629587, z: 0.00035381847, w: 0.9804604}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 7.329417
     speed: 2
-    m_Value: 12.124355
+    m_Value: 7.329417
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -900,18 +900,18 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 62ceffff5cf9ffff5c470000
+      m_ExpandedIDs: 5e8affff6c8affffa48affff2efbffff6a780000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Main Camera
-        m_OriginalName: Main Camera
+        m_Name: WholeGameController
+        m_OriginalName: WholeGameController
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 20430
+        m_UserData: 30802
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -968,7 +968,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Prefab
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -984,7 +985,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: de5a0000
     m_LastClickedID: 23262
-    m_ExpandedIDs: 00000000fe47000000480000024800000448000006480000
+    m_ExpandedIDs: 00000000024400000444000006440000084400000a4400000c4400000e44000010440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1012,21 +1013,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000f04000000441000008410000fe47000000480000024800000448000006480000
+    m_ExpandedIDs: ffffffff00000000024400000444000006440000084400000a4400000c4400000e44000010440000184400001e440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: MapCameraFollow
+      m_OriginalName: MapCameraFollow
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 17044
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 

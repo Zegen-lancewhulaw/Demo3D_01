@@ -331,6 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5026183283946034233}
   - component: {fileID: 2844833068552462645}
+  - component: {fileID: -4641642469432822929}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -383,6 +384,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4641642469432822929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2308745522105410816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 819e9997a8e816d46ad6c13a585ffd8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rotateSpeed: 90
+  turretRotateSpeed: 540
+  barrelRotateSpeed: 2700
 --- !u!1 &2751538698202644126
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7292333755693247643}
+  - component: {fileID: 125727335690713421}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -664,6 +682,24 @@ Transform:
   - {fileID: 4960944951400425042}
   m_Father: {fileID: 3564334554653233724}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &125727335690713421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5582984364761007375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f05695820a20534bab2ba819a59fbe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magazineVolumn: 6
+  fireInterval: 0.5
+  replenishingLifeTime: 4
+  spreadAngle: 0.5
+  muzzleOffset: 4.5
+  shellPrefab: {fileID: 0}
 --- !u!1 &5905988004454822952
 GameObject:
   m_ObjectHideFlags: 0
