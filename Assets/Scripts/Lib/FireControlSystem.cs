@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class FireControlSystem : MonoBehaviour
 {
     // ==================================================
@@ -21,7 +19,7 @@ public class FireControlSystem : MonoBehaviour
     [Tooltip("弹道随机散布范围（度）")]
     [SerializeField] private float spreadAngle = 0.5f;
     [Tooltip("炮口生成位置的前向偏移量")]
-    [SerializeField] private float muzzleOffset = 4.5f;
+    [SerializeField] private float muzzleOffset = 4.7f;
 
     // ==================================================
     // 2. 引用区域
