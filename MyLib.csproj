@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Lib\TransformExtensions.cs" />
     <Compile Include="Assets\Scripts\Lib\MapCameraFollow.cs" />
     <Compile Include="Assets\Scripts\Lib\VehicleMove.cs" />
+    <Compile Include="Assets\Scripts\Lib\FireControlSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Lib\MyLib.asmdef" />

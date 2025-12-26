@@ -24,13 +24,6 @@ public class VehicleMove : MonoBehaviour
     [Tooltip("炮管抬降速度（度）")]
     [SerializeField] private float barrelRotateSpeed = 2700f;
 
-    [Header("Combat Settings")]
-    [Tooltip("射击冷却时间（秒）")]
-    [SerializeField] private float fireInterval = 0.5f;
-    [Tooltip("弹道随机散布范围（度）")] 
-    [SerializeField] private float spreadAngle = 0.5f;
-    [Tooltip("炮口生成位置的前向偏移量")]
-    [SerializeField] private float muzzleOffset = 4f;
 
     // =================================================
     // 2. 引用区域 (References) - 缓存组件引用
@@ -43,8 +36,6 @@ public class VehicleMove : MonoBehaviour
     // 3. 状态区域 (State) - 运行时变化的变量
     // =================================================
 
-    private int _firedCount = 0; //记录累计开火次数
-    private float _lastFireTime; //记录上一次开火的具体时间
     private float _barrelAngle = 0; //记录当前炮管角度，范围0~-60度
 
     // =================================================
@@ -54,7 +45,6 @@ public class VehicleMove : MonoBehaviour
     void Start()
     {
         InitializeReferences();
-        _lastFireTime = -fireInterval;
     }
 
     void Update()
@@ -67,7 +57,6 @@ public class VehicleMove : MonoBehaviour
         if (_barrel != null)
         {
             HandleBarrelRotation();
-            HandleFiringInput();
         }
     }
 
@@ -130,47 +119,5 @@ public class VehicleMove : MonoBehaviour
         _barrelAngle += rotationAmount;
         _barrelAngle = Mathf.Clamp(_barrelAngle, -60f, 0f);
         _barrel.localEulerAngles = new Vector3(_barrelAngle, 0, 0);
-    }
-
-    /// <summary>
-    /// 处理开火输入和冷却判断
-    /// </summary>
-    private void HandleFiringInput()
-    {
-        if (Input.GetMouseButtonDown(0))
-            if (Time.time - _lastFireTime > fireInterval)
-            {
-                Fire();
-                _lastFireTime = Time.time;
-                _firedCount++;
-            }
-    }
-
-    /// <summary>
-    /// 执行具体的开火逻辑：生成炮弹、计算散布
-    /// </summary>
-    private void Fire()
-    {
-        // 1. 计算生成位置
-        Vector3 spawnPos = _barrel.TransformPoint(Vector3.forward * muzzleOffset);
-
-        // 2. 创建炮弹
-        GameObject shell = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        shell.name = $"Shell_{_firedCount}";
-        shell.transform.localScale = Vector3.one * 0.5f;
-        shell.transform.position = spawnPos;
-
-        // 3. 计算随机散布旋转
-        Quaternion randomSpread = Quaternion.Euler(
-            Random.Range(-spreadAngle, spreadAngle),
-            Random.Range(-spreadAngle, spreadAngle),
-            0
-        );
-
-        // 4. 应用最终旋转
-        shell.transform.rotation = _barrel.rotation * randomSpread;
-
-        // 5. 添加逻辑组件
-        shell.AddComponent<ShellMove>();
     }
 }
