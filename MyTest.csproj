@@ -61,9 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Test\ColliderTest.cs" />
+    <Compile Include="Assets\Scripts\Test\AudioTest.cs" />
     <Compile Include="Assets\Scripts\Test\PositionConvertTest.cs" />
     <Compile Include="Assets\Scripts\Test\ScreenTest.cs" />
     <Compile Include="Assets\Scripts\Test\LightingSystemTest.cs" />
+    <Compile Include="Assets\Scripts\Test\RigidBodyTest.cs" />
     <Compile Include="Assets\Scripts\Test\InputTest.cs" />
   </ItemGroup>
   <ItemGroup>
